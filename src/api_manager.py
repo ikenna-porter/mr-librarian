@@ -1,11 +1,21 @@
+import os
 import requests
-import json
- 
+from dotenv import load_dotenv
+
+load_dotenv()
+API_KEY = os.getenv("PROJECT_API_KEY")
+
 class APIManager():
     """A class responsible for fetching, decoding and changing the shape of data received from Google Books API"""
-    def fetch():
+    
+    def fetch_books(self, user_input):
         """A method that performs the fetch request"""
-        pass
+
+        url = f"https://www.googleapis.com/books/v1/volumes?q={user_input}key={API_KEY}"
+        response = requests.get(url)
+        print(response)
+        print(response.json())
+
 
     def decode():
         pass
