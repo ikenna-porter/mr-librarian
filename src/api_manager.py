@@ -9,16 +9,27 @@ class APIManager():
     """A class responsible for fetching, decoding and changing the shape of data received from Google Books API"""
     
     def fetch_books(self, user_input):
-        """A method that performs the fetch request"""
+        """Fetches 5 books that match the users query and removed unnecessary data"""
 
-        url = f"https://www.googleapis.com/books/v1/volumes?q={user_input}key={API_KEY}"
+        url = f"https://www.googleapis.com/books/v1/volumes?q={user_input}&maxResults=5&key={API_KEY}"
         response = requests.get(url)
-        print(response)
-        print(response.json())
+        retrieved_books = response.json()
+        return self.clean_up_data(retrieved_books)
 
+    def clean_up_data(self, books):
+        """Removes unnecessary book dat from response body"""
+        filtered_books = []
+        book_id = 1
 
-    def decode():
-        pass
+        for book in books["items"]:
+            necessary_book_data = {}
+            necessary_book_data["id"] = book_id
+            book_id+=1
+            necessary_book_data["title"] = book["volumeInfo"]["title"]
+            necessary_book_data["authors"] = ", ".join(book["volumeInfo"]["authors"])
+            publisher = book["volumeInfo"].get("publisher")
+            necessary_book_data["publisher"] = publisher if publisher else "N/A"
+            filtered_books.append(necessary_book_data)
 
-    def clean_up_data():
-        pass
+        return filtered_books
+

@@ -26,24 +26,26 @@ class ArgumentParser():
     def parse_arguments(self, user_input):
         """Takes in user's input and decides what course of action the program should take."""
         args_dict = vars(user_input)
-        print(args_dict)
         for arg in args_dict:
-            print(arg)
             if args_dict[arg]:
                 if arg == "f":
-                    self.parse_find_books_arg(arg)
+                    search_query = self.parse_find_books_arg(args_dict)
 
-                    books = APIManager()
-                    books.fetch_books()
-                elif arg == "add_book":
+                    fetch_data = APIManager()
+                    books = fetch_data.fetch_books(search_query)
+                    return books
+
+                elif arg == "add":
                     print("Book added to reading list")
-                elif arg == "view_list":
+                elif arg == "view":
                     print("Snapshot of reading list")
                 else:
                     print("Invalid argument. Please type 'python main.py --help' for guidance.")
     
-    def parse_find_books_arg(self, arg):
-        print(f'book found successfully? + {arg}')
+    def parse_find_books_arg(self, args_dict):
+        """Formats query so that it can be read by Google Book's API"""
+        return "+".join(args_dict["f"])
+
 
     def parse_add_book_arg(self):
         pass
