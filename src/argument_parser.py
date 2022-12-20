@@ -1,5 +1,10 @@
 import argparse
-from api_manager import APIManager
+import os, sys
+
+#prevents relative import issues running unit tests
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
+from src.api_manager import APIManager
 
 class ArgumentParser():
     """A class that accepts user's input, parses it, and decides what course of action to take based on input."""
@@ -29,7 +34,7 @@ class ArgumentParser():
         for arg in args_dict:
             if args_dict[arg]:
                 if arg == "f":
-                    search_query = self.parse_find_books_arg(args_dict)
+                    search_query = self.parse_find_books_arg(args_dict["f"])
 
                     fetch_data = APIManager()
                     books = fetch_data.fetch_books(search_query)
@@ -42,9 +47,12 @@ class ArgumentParser():
                 else:
                     print("Invalid argument. Please type 'python main.py --help' for guidance.")
     
-    def parse_find_books_arg(self, args_dict):
+    def parse_find_books_arg(self, args_list):
         """Formats query so that it can be read by Google Book's API"""
-        return "+".join(args_dict["f"])
+        if len(args_list) == 0:
+            raise IndexError("Your search query must contain characters. Insert them after the '-f' flag.")
+
+        return "+".join(args_list)
 
 
     def parse_add_book_arg(self):
