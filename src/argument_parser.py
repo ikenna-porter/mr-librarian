@@ -1,5 +1,6 @@
 import argparse
 import os, sys
+from .reading_list import ReadingList
 
 #prevents relative import issues running unit tests
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -20,13 +21,13 @@ class ArgumentParser():
         find_book_parser.add_argument("-f", type=str, nargs="+")
 
         #establishes format for arguments to find a book
-        #python main.py book-list --add 2
-        #python main.py book-list --view
-        book_list_parser = subparsers.add_parser("book-list", help="Adds book to reading list")
+        #python main.py reading-list --add 2
+        #python main.py reading-list --view
+        book_list_parser = subparsers.add_parser("reading-list", help="Adds book to reading list")
         book_list_parser.add_argument("--add", choices=["1","2","3","4","5"])
         book_list_parser.add_argument("--view", action="store_true", help="View your reading list")
 
-        return  parser.parse_args()
+        return parser.parse_args()
     
     def parse_arguments(self, user_input):
         """Takes in user's input and decides what course of action the program should take."""
@@ -41,6 +42,8 @@ class ArgumentParser():
                     return ["f", books]
 
                 elif arg == "add":
+                    list_ = ReadingList()
+                    list_.add_book(args_dict[arg])
                     print("Book added to reading list")
                 elif arg == "view":
                     print("Snapshot of reading list")

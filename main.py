@@ -1,6 +1,8 @@
-from prompts import PromptManager
-from api_manager import APIManager
-from argument_parser import ArgumentParser
+from src.prompts import PromptManager
+from src.api_manager import APIManager
+from src.argument_parser import ArgumentParser
+import queries
+
 
 def main():
     prompt = PromptManager()
@@ -14,11 +16,13 @@ def main():
     arguments = ArgumentParser()
     response = arguments.parse_arguments(user_input)
     if response[0] == "f":
-        current_books = response[1]
-        prompt.display_fetched_books(response)
-    # elif response[0] == "v":
+        # current_books = response[1]
+        prompt.display_fetched_books(response[1])
+    # elif response[0] == "add":
     #     print(current_books)
     #     print("v")
+    else: 
+        print("done")
 
 
 
