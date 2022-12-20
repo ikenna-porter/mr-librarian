@@ -24,5 +24,5 @@ All commands must be executed from the root directory:
 
 ## Running Unit Tests:
 To run the unit tests, make sure you're in the application's root directory and run `python -m unittest`.
-This will run all the unit tests at once. To run them on a file-by-file basis, cd to the tests directory and run them using `python -m unittest <directory-name>`
+This will run all the unit tests at once. To run them on a file-by-file basis, cd to the tests directory and run them using `python -m unittest <file-name>`
 
