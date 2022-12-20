@@ -13,12 +13,12 @@ source .venv/bin/activate  #macOs
 6. You can now use the app
 
 ## Terminal Commands for Using App
-1. All commands must be executed from the src directory
-2. To find a book (using Google Books API):
+All commands must be executed from the root directory:
+1. To find a book (using Google Books API):
 ```python main.py find-book -f <user input>```
-4. To add a book to your book list:
+2. To add a book to your book list:
 ```#python main.py book-list --add <number from 1 to 5>``
-6. To view your book list:
+3. To view your book list:
 ```python main.py book-list --view```
 
 ## Running Unit Tests:
