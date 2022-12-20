@@ -17,7 +17,7 @@ All commands must be executed from the root directory:
 1. To find a book (using Google Books API):
 ```python main.py find-book -f <user input>```
 2. To add a book to your book list:
-```#python main.py book-list --add <number from 1 to 5>``
+```#python main.py book-list --add <number from 1 to 5>```
 3. To view your book list:
 ```python main.py book-list --view```
 
