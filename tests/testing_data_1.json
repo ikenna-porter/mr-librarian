@@ -1,0 +1,397 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 928,
+    "items": [
+      {
+        "kind": "books#volume",
+        "id": "p3QQjwEACAAJ",
+        "etag": "srLh6HiQEvY",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/p3QQjwEACAAJ",
+        "volumeInfo": {
+          "title": "Harry Potter and the philosopher's stone",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publishedDate": "2010",
+          "description": "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el colegio interno Hogwarts de magia y hechicería. A partir de ese momento, la suerte de Harry da un vuelco espectacular. En esa escuela tan especial aprenderá encantamientos, trucos fabulosos y tácticas de defensa contra las malas artes. Se convertirá en el campeón escolar de quidditch, especie de fútbol aéreo que se juega montado sobre escobas, y se hará un puñado de buenos amigos... aunque también algunos temibles enemigos. Pero sobre todo, conocerá los secretos que le permitirán cumplir con su destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. ¡Es un verdadero mago! (Source : 4e de couverture)",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "8498382661"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9788498382662"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 254,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "averageRating": 4,
+          "ratingsCount": 7,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=p3QQjwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=p3QQjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http://books.google.com.ar/books?id=p3QQjwEACAAJ&dq=harry%2Bpotter&hl=&cd=1&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=p3QQjwEACAAJ&dq=harry%2Bpotter&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_and_the_philosopher_s_stone.html?hl=&id=p3QQjwEACAAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=p3QQjwEACAAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "2zgRDXFWkm8C",
+        "etag": "UzVL3zzC3A4",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/2zgRDXFWkm8C",
+        "volumeInfo": {
+          "title": "Harry Potter y la piedra filosofal",
+          "authors": [
+            "J.K. Rowling"
+          ],
+          "publisher": "Pottermore Publishing",
+          "publishedDate": "2015-12-08",
+          "description": "Con las manos temblorosas, Harry le dio la vuelta al sobre y vio un sello de lacre púrpura con un escudo de armas: un león, un águila, un tejón y una serpiente, que rodeaban una gran letra H. Harry Potter nunca había oído nada sobre Hogwarts cuando las cartas comienzan a caer en el felpudo del número cuatro de Privet Drive. Escritas en tinta verde en un pergamino amarillento con un sello morado, sus horribles tíos las han confiscado velozmente. En su undécimo cumpleaños, un hombre gigante de ojos negros llamado Rubeus Hagrid aparece con una noticia extraordinaria: Harry Potter es un mago y tiene una plaza en el Colegio Hogwarts de Magia y Hechicería. ¡Una aventura increíble está a punto de empezar! Tema musical compuesto por James Hannigan.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9781781101315"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "1781101310"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": true
+          },
+          "pageCount": 320,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "averageRating": 4,
+          "ratingsCount": 124,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": true,
+          "contentVersion": "1.17.17.0.preview.3",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=2zgRDXFWkm8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=2zgRDXFWkm8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http://books.google.com.ar/books?id=2zgRDXFWkm8C&printsec=frontcover&dq=harry%2Bpotter&hl=&cd=2&source=gbs_api",
+          "infoLink": "https://play.google.com/store/books/details?id=2zgRDXFWkm8C&source=gbs_api",
+          "canonicalVolumeLink": "https://play.google.com/store/books/details?id=2zgRDXFWkm8C"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "FOR_SALE",
+          "isEbook": true,
+          "listPrice": {
+            "amount": 104,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amount": 104,
+            "currencyCode": "ARS"
+          },
+          "buyLink": "https://play.google.com/store/books/details?id=2zgRDXFWkm8C&rdid=book-2zgRDXFWkm8C&rdot=1&source=gbs_api",
+          "offers": [
+            {
+              "finskyOfferType": 1,
+              "listPrice": {
+                "amountInMicros": 104000000,
+                "currencyCode": "ARS"
+              },
+              "retailPrice": {
+                "amountInMicros": 104000000,
+                "currencyCode": "ARS"
+              }
+            }
+          ]
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "PARTIAL",
+          "embeddable": true,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.ar/books/download/Harry_Potter_y_la_piedra_filosofal-sample-epub.acsm?id=2zgRDXFWkm8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.ar/books/download/Harry_Potter_y_la_piedra_filosofal-sample-pdf.acsm?id=2zgRDXFWkm8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=2zgRDXFWkm8C&hl=&source=gbs_api",
+          "accessViewStatus": "SAMPLE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Con las manos temblorosas, Harry le dio la vuelta al sobre y vio un sello de lacre púrpura con un escudo de armas: un león, un águila, un tejón y una serpiente, que rodeaban una gran letra H. Harry Potter nunca había oído nada sobre ..."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "1GKREAAAQBAJ",
+        "etag": "PZcCAp7GBnU",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/1GKREAAAQBAJ",
+        "volumeInfo": {
+          "title": "Harry Potter y la Orden del Fénix (20 Aniv. Gryffindor) / Harry Potter and the O rder of the Phoenix (Gryffindor)",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publisher": "National Geographic Books",
+          "publishedDate": "2022-04-05",
+          "description": "Celebra el 20º aniversario de Harry Potter con esta edición especial de Harry Potter y la Orden del Fénix. Edición Gryffindor «El director cree que no es conveniente que eso continúe ocurriendo. Quiere que te enseñe a cerrar tu mente al Señor Tenebroso.» Son malos tiempos para Hogwarts. Tras el ataque de los dementores a su primo Dudley, Harry Potter comprende que Voldemort no se detendrá ante nada para encontrarlo. Muchos niegan que el Señor Tenebroso haya regresado, pero Harry no está solo: una orden secreta se reúne en Grimmauld Place para luchar contra las fuerzas oscuras. Harry debe permitir que el profesor Snape le enseñe a protegerse de las brutales incursiones de Voldemort en su mente. Pero éstas son cada vez más potentes, y a Harry se le está agotando el tiempo... ENGLISH DESCRIPTION Celebrate Harry Potter’s 20th anniversary with this special edition of Harry Potter and the Order of the Phoenix. Gryffindor Edition. “The Headmaster believes that it is not wise for you to continue to do this. He wants me to teach you how to close your mind to the Dark Lord.” Dark times are coming to Hogwarts. Following the Dementors' attack on his cousin Dudley, Harry realizes that Voldemort will stop at nothing to find him. Many deny that the Dark Lord has returned, but Harry is not alone: a secret order meets at Grimmauld Place to fight the dark forces. Harry must allow Professor Snape to teach him how to protect himself from Voldemort's brutal attacks on his mind. But these are getting more and more powerful, and Harry's time is running out.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9788418174605"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "8418174609"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 0,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=1GKREAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=1GKREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http://books.google.com.ar/books?id=1GKREAAAQBAJ&dq=harry%2Bpotter&hl=&cd=3&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=1GKREAAAQBAJ&dq=harry%2Bpotter&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_y_la_Orden_del_F%C3%A9nix_20_An.html?hl=&id=1GKREAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=1GKREAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Harry must allow Professor Snape to teach him how to protect himself from Voldemort&#39;s brutal attacks on his mind. But these are getting more and more powerful, and Harry&#39;s time is running out."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "yHWREAAAQBAJ",
+        "etag": "LqNMz2daqtI",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/yHWREAAAQBAJ",
+        "volumeInfo": {
+          "title": "Harry Potter y la piedra filosofal. Edición ilustrada / Harry Potter and the Sorcerer's Stone: The Illustrated Edition",
+          "authors": [
+            "J.K. Rowling"
+          ],
+          "publisher": "National Geographic Books",
+          "publishedDate": "2015-10-31",
+          "description": "Una maravillosa edición, ilustrada por Jim Kay, del primer volumen de la serie de Harry Potter. La vida de Harry Potter cambia para siempre el día que cumple once años, cuando el gigante de ojos negros y brillantes Rubeus Hagrid le entrega una carta y le revela noticias asombrosas: Harry Potter no es un chico normal y corriente, es un mago. Está a punto de comenzar una aventura extraordinaria... El prestigioso artista británico Jim Kay ha contribuido con su enorme talento en esta primera edición ilustrada del clásico de J.K. Rowling. Un libro maravilloso y cautivador, una obra de gran valor tanto para fans incondicionales como para nuevos lectores. J.K. Rowling ha dicho: «Las ilustraciones de Jim Kay me emocionaron profundamente. Me encanta su interpretación del mundo de Harry Potter, y para mí es un verdadero honor que haya aportado su talento a esta nueva edición.» ENGLISH DESCRIPTION The beloved first book of the Harry Potter series, now fully illustrated by award-winning artist Jim Kay. For the first time, J.K. Rowling's beloved Harry Potter books will be presented in lavishly illustrated full-color editions. Kate Greenaway-award-winning artist Jim Kay has created over 100 stunning illustrations, making this deluxe format a perfect gift as much for a child being introduced to the series, as for the dedicated fan. Harry Potter has never been the star of a Quidditch team, scoring points while riding a broom far above the ground. He knows no spells, has never helped to hatch a dragon, and has never worn a cloak of invisibility. All he knows is a miserable life with the Dursleys, his horrible aunt and uncle, and their abominable son, Dudley -- a great big swollen spoiled bully. Harry's room is a tiny closet at the foot of the stairs, and he hasn't had a birthday party in eleven years. But all that is about to change when a mysterious letter arrives by owl messenger: a letter with an invitation to an incredible place that Harry -- and anyone who reads about him -- will find unforgettable.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_13",
+              "identifier": "9788498387094"
+            },
+            {
+              "type": "ISBN_10",
+              "identifier": "8498387094"
+            }
+          ],
+          "readingModes": {
+            "text": true,
+            "image": false
+          },
+          "pageCount": 0,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "preview-1.0.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=yHWREAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=yHWREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http://books.google.com.ar/books?id=yHWREAAAQBAJ&dq=harry%2Bpotter&hl=&cd=4&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=yHWREAAAQBAJ&dq=harry%2Bpotter&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_y_la_piedra_filosofal_Edici.html?hl=&id=yHWREAAAQBAJ"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=yHWREAAAQBAJ&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Kate Greenaway-award-winning artist Jim Kay has created over 100 stunning illustrations, making this deluxe format a perfect gift as much for a child being introduced to the series, as for the dedicated fan."
+        }
+      },
+      {
+        "kind": "books#volume",
+        "id": "_-hnPrimlnYC",
+        "etag": "KDinB1LUlqw",
+        "selfLink": "https://www.googleapis.com/books/v1/volumes/_-hnPrimlnYC",
+        "volumeInfo": {
+          "title": "Harry Potter y la cámara secreta",
+          "authors": [
+            "J. K. Rowling"
+          ],
+          "publisher": "Emece",
+          "publishedDate": "1999",
+          "description": "Tras derrotar una vez más a lord Voldemort, su siniestro enemigo en Harry Potter y la piedra filosofal, Harry espera impaciente en casa de sus insoportables tíos el inicio del segundo curso del Colegio Hogwarts de Magia y Hechicería. Sin embargo, la espera dura poco, pues un elfo aparece en su habitación y le advierte que una amenaza mortal se cierne sobre la escuela. Así pues, Harry no se lo piensa dos veces y, acompañado de Ron, su mejor amigo, se dirige a Hogwarts en un coche volador. Pero ¿puede un aprendiz de mago defender la escuela de los malvados que pretenden destruirla? Sin saber que alguien ha abierto la Cámara de los Secretos, dejando escapar una serie de monstruos peligrosos, Harry y sus amigos Ron y Hermione tendrán que enfrentarse con arañas gigantes, serpientes encantadas, fantasmas enfurecidos y, sobre todo, con la mismísima reencarnación de su más temible adversario.",
+          "industryIdentifiers": [
+            {
+              "type": "ISBN_10",
+              "identifier": "8478884955"
+            },
+            {
+              "type": "ISBN_13",
+              "identifier": "9788478884957"
+            }
+          ],
+          "readingModes": {
+            "text": false,
+            "image": false
+          },
+          "pageCount": 288,
+          "printType": "BOOK",
+          "categories": [
+            "Juvenile Fiction"
+          ],
+          "averageRating": 4,
+          "ratingsCount": 125,
+          "maturityRating": "NOT_MATURE",
+          "allowAnonLogging": false,
+          "contentVersion": "1.3.3.0.preview.0",
+          "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+          },
+          "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/content?id=_-hnPrimlnYC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=_-hnPrimlnYC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+          },
+          "language": "es",
+          "previewLink": "http://books.google.com.ar/books?id=_-hnPrimlnYC&q=harry%2Bpotter&dq=harry%2Bpotter&hl=&cd=5&source=gbs_api",
+          "infoLink": "http://books.google.com.ar/books?id=_-hnPrimlnYC&dq=harry%2Bpotter&hl=&source=gbs_api",
+          "canonicalVolumeLink": "https://books.google.com/books/about/Harry_Potter_y_la_c%C3%A1mara_secreta.html?hl=&id=_-hnPrimlnYC"
+        },
+        "saleInfo": {
+          "country": "AR",
+          "saleability": "NOT_FOR_SALE",
+          "isEbook": false
+        },
+        "accessInfo": {
+          "country": "AR",
+          "viewability": "NO_PAGES",
+          "embeddable": false,
+          "publicDomain": false,
+          "textToSpeechPermission": "ALLOWED",
+          "epub": {
+            "isAvailable": false
+          },
+          "pdf": {
+            "isAvailable": false
+          },
+          "webReaderLink": "http://play.google.com/books/reader?id=_-hnPrimlnYC&hl=&source=gbs_api",
+          "accessViewStatus": "NONE",
+          "quoteSharingAllowed": false
+        },
+        "searchInfo": {
+          "textSnippet": "Tras derrotar una vez más a lord Voldemort, su siniestro enemigo en Harry Potter y la piedra filosofal, Harry espera impaciente en casa de sus insoportables tíos el inicio del segundo curso del Colegio Hogwarts de Magia y Hechicería."
+        }
+      }
+    ]
+  }
+  
