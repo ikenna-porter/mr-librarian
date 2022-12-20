@@ -6,10 +6,10 @@ load_dotenv()
 API_KEY = os.getenv("PROJECT_API_KEY")
 
 class APIManager():
-    """A class responsible for fetching, decoding and changing the shape of data received from Google Books API"""
+    """A class responsible for fetching, decoding and changing the shape of data received from Google Books API."""
     
     def fetch_books(self, user_input):
-        """Fetches 5 books that match the users query and removed unnecessary data"""
+        """Fetches 5 books that match the users query and removed unnecessary data."""
 
         url = f"https://www.googleapis.com/books/v1/volumes?q={user_input}&maxResults=5&key={API_KEY}"
         response = requests.get(url)
@@ -20,7 +20,7 @@ class APIManager():
             print("Error retrieving book data from API. Check logs for additional information.")
 
     def clean_up_data(self, books):
-        """Removes unnecessary book dat from response body"""
+        """Removes unnecessary book dat from response body."""
         filtered_books = []
         book_id = 1
 
