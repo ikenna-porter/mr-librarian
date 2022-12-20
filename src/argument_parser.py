@@ -38,7 +38,7 @@ class ArgumentParser():
 
                     fetch_data = APIManager()
                     books = fetch_data.fetch_books(search_query)
-                    return books
+                    return ["f", books]
 
                 elif arg == "add":
                     print("Book added to reading list")
