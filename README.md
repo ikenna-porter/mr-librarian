@@ -17,7 +17,7 @@ source .venv/bin/activate  #macOs
 All commands must be executed from the root directory:
 1. To find a book (using Google Books API):
 ```python main.py find-book -f <user input>```
-2. Using an ID from the previous command output, add a book to your book list:
+2. Using an ID from the previous command output, add a book to your reading list:
 ```#python main.py book-list --add <number from 1 to 5>```
 3. If you want to view your book list at any moment:
 ```python main.py book-list --view```
