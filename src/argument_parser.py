@@ -24,8 +24,8 @@ class ArgumentParser():
         #python main.py reading-list --add 2
         #python main.py reading-list --view
         book_list_parser = subparsers.add_parser("reading-list", help="Adds book to reading list")
-        book_list_parser.add_argument("--add", choices=["1","2","3","4","5"])
-        book_list_parser.add_argument("--view", action="store_true", help="View your reading list")
+        book_list_parser.add_argument("-a", choices=["1","2","3","4","5"])
+        book_list_parser.add_argument("-v", action="store_true", help="View your reading list")
 
         return parser.parse_args()
     
@@ -41,12 +41,11 @@ class ArgumentParser():
                     books = fetch_data.fetch_books(search_query)
                     return ["f", books]
 
-                elif arg == "add":
-                    list_ = ReadingList()
-                    list_.add_book(args_dict[arg])
-                    print("Book added to reading list")
-                elif arg == "view":
-                    print("Snapshot of reading list")
+                elif arg == "a":
+                    return["a", args_dict[arg]]
+
+                elif arg == "v":
+                    return["v"]
                 else:
                     print("Invalid argument. Please type 'python main.py --help' for guidance.")
     
