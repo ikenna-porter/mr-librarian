@@ -2,15 +2,16 @@
 
 ## Set Up
 1. To set up the project on your local machine, fork the repo and clone it.
-2. Create a virtual environment with the following command:
+2. Create a virtual environment `python -m venv .venv`
+3. Now activate it:
 ```
 source .venv/bin/activate  #macOs
 ./.venv/Scripts/Activate.ps1 #windows
 ```
-3. Update pip `python -m pip install --upgrade pip`
-4. Install all the dependencies in the requirements.txt file `pip install -r requirements.txt`
-5. Create a new requirements.txt file from the installed pip packages `pip freeze > requirements.txt`
-6. You can now use the app
+4. Update pip `python -m pip install --upgrade pip`
+5. Install all the dependencies in the requirements.txt file `pip install -r requirements.txt`
+6. Create a new requirements.txt file from the installed pip packages `pip freeze > requirements.txt`
+7. You can now use the app
 
 ## Terminal Commands for Using App
 All commands must be executed from the root directory:
