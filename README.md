@@ -16,15 +16,15 @@ source .venv/bin/activate  #macOs
 ## Terminal Commands for Using App
 All commands must be executed from the root directory:
 
-###Find book
+### Find book
 1. To find a book (using Google Books API):
 ```python main.py find-book -f <user input>```
 
-###Add book to reading list
+### Add book to reading list
 2. Using an ID from the previous command output, add a book to your reading list:
 ```#python main.py reading-list --add <number from 1 to 5>```
 
-###View reading list
+### View reading list
 3. If you want to view your reading list at any moment:
 ```python main.py reading-list --view```
 
