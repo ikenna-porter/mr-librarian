@@ -18,9 +18,9 @@ All commands must be executed from the root directory:
 1. To find a book (using Google Books API):
 ```python main.py find-book -f <user input>```
 2. Using an ID from the previous command output, add a book to your reading list:
-```#python main.py book-list --add <number from 1 to 5>```
-3. If you want to view your book list at any moment:
-```python main.py book-list --view```
+```#python main.py reading-list --add <number from 1 to 5>```
+3. If you want to view your reading list at any moment:
+```python main.py reading-list --view```
 
 ## Running Unit Tests:
 To run the unit tests, make sure you're in the application's root directory and run `python -m unittest`.
