@@ -40,7 +40,7 @@ def add_book_to_reading_list(book):
         c.execute("INSERT INTO reading_list VALUES (?, ?, ?)", (book[1], book[2], book[3]))
 
 def select_reading_list():
-    """Prints reading_list table on the console."""
+    """Prints reading_list table to the console."""
     conn = sqlite3.connect("mr-librarian.db")
     c = conn.cursor()
     c.execute("SELECT * FROM reading_list")

@@ -10,7 +10,7 @@ from src.api_manager import APIManager
 class ArgumentParser():
     """A class that accepts user's input, parses it, and decides what course of action to take based on input."""
 
-    def argument_parser_configs():
+    def argument_parser_configs(self):
         """Creates the top-level parser using argparse library"""
         parser = argparse.ArgumentParser(description="Welcome to Mr. Librarian. Let's get reading!")
         subparsers = parser.add_subparsers()
@@ -24,6 +24,7 @@ class ArgumentParser():
         book_list_parser.add_argument("-a", choices=["1","2","3","4","5"])
         book_list_parser.add_argument("-v", action="store_true", help="View your reading list")
 
+        print(parser.parse_args())
         return parser.parse_args()
     
     def parse_arguments(self, user_input):

@@ -4,10 +4,10 @@ from tabulate import tabulate
 import queries
 
 def main():
-    user_input = ArgumentParser.argument_parser_configs()
-
-    # Parses user input for command line argument and determines what command to execute based on provided argument
     arguments_parser = ArgumentParser()
+    
+    # Parses user input for command line argument and determines what command to execute based on provided argument
+    user_input = arguments_parser.argument_parser_configs()
     argument = arguments_parser.parse_arguments(user_input)
 
     # If user entered 'find-book -f' argument (to search for a book from Google Books API):
