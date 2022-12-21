@@ -1,7 +1,8 @@
 import os
 import requests
-# from dotenv import load_dotenv
 
+# This code was originally used to keep API Key private. For the sake of having others use API, I've provided key below.
+# from dotenv import load_dotenv
 # load_dotenv()
 # API_KEY = os.getenv("PROJECT_API_KEY")
 API_KEY = "AIzaSyDsPduq9rw52gI2fD4YlH8vQhrne0Pkxv0"
