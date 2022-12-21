@@ -27,6 +27,7 @@ All commands must be executed from the root directory:
 
 * ### Add book to reading list
 Using an ID from the previous command output, add a book to your reading list:
+
 ```python main.py reading-list -a <number from 1 to 5>```
 
 * ### View reading list
