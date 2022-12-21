@@ -1,9 +1,10 @@
 import os
 import requests
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
-API_KEY = os.getenv("PROJECT_API_KEY")
+# load_dotenv()
+# API_KEY = os.getenv("PROJECT_API_KEY")
+API_KEY = "AIzaSyDsPduq9rw52gI2fD4YlH8vQhrne0Pkxv0"
 
 class APIManager():
     """A class responsible for fetching, decoding and changing the shape of data received from Google Books API."""

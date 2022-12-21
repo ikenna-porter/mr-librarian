@@ -24,7 +24,6 @@ class ArgumentParser():
         book_list_parser.add_argument("-a", choices=["1","2","3","4","5"])
         book_list_parser.add_argument("-v", action="store_true", help="View your reading list")
 
-        print(parser.parse_args())
         return parser.parse_args()
     
     def parse_arguments(self, user_input):

@@ -13,7 +13,6 @@ class ReadingList():
                 print("\n*Book successfully added*\n")
                 self.view_list()
             else:
-                print(queries.does_reading_list_table_exist())
                 queries.create_reading_list_table()
                 book = queries.select_book_to_add(num)
                 queries.add_book_to_reading_list(book[0])
@@ -25,6 +24,9 @@ class ReadingList():
 
     def view_list(self):
         """Displays the user's reading list in the console."""
-        list = queries.select_reading_list()
-        print("\nYOUR READING LIST:\n")
-        print(tabulate(list, headers=["Title", "Author(s)", "Publisher"], tablefmt="simple"), "\n")
+        try:
+            list = queries.select_reading_list()
+            print("\nYOUR READING LIST:\n")
+            print(tabulate(list, headers=["Title", "Author(s)", "Publisher"], tablefmt="simple"), "\n")
+        except:
+            print("\nYour reading list is nonexistent.\nYou must select a book before you can view your reading list.\n")
