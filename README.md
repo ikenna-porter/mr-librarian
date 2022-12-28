@@ -1,12 +1,12 @@
 # Mr. Librarian
 
 ## Description
-Mr. Librarian is a command-line book list app that allows users to search for books (using Google Books API) and store the results of the search query in their personal reading list.
+Mr. Librarian is a command-line book list app that allows users to search for books (using Google Books API) and store the results of their search queries in their personal reading list.
 
 ## Installation
 1. To set up the project on your machine, fork the repo and clone it.
 2. Create a virtual environment `python -m venv .venv`
-3. Now, activate it:
+3. Now, activate the virtual environment:
 ```
 #macOs:
 source .venv/bin/activate
@@ -33,6 +33,21 @@ Using an ID from the previous command output, add a book to your reading list:
 * ### View reading list
 ```python main.py reading-list -v```
 
+* ### Need help?
+If at any point you're unsure of what command or argument to use, you can type `--help` or `-h` and a list of options and/or positional arguments will appear. They will guide you in submitting valid commands. For example, the command `python main.py -h` will output
+```
+positional arguments:
+  {find-book,reading-list}
+    find-book           Finds books using Google Books API
+    reading-list        Adds and views books to reading list
+
+options:
+  -h, --help            show this help message and exit
+```
+Now you know that you must enter either `python main.py find-book` or `python main.py reading-list`.
+
+Note: You must always enter `python main.py` before each command, even when using the `-h` and `--help` arguments.
+
 ## Running Unit Tests
 To run the unit tests, make sure you're in the application's root directory and run `python -m unittest`.
 This will run all the unit tests at once. To run them on a file-by-file basis, cd to the tests directory and run them using `python -m unittest <file-name>`
@@ -42,5 +57,5 @@ Unfortunately, I was unable to add units tests for the queries.py and reading_li
 
 ## Future
 Below are some features to improve the application in the future:
-* Support all CRUD functionality for reading list - right now it cannot be completely updated (deleting books) and it cannot be deleted. 
+* Support all CRUD functionality for reading list - right now it cannot be completely updated (deleting individual books) and the entire list cannot be deleted either. 
 * Implement the unittest.mock library so that database isn't directly queried while testing
