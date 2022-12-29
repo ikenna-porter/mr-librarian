@@ -22,7 +22,7 @@ class APIManager():
             print("Error retrieving book data from API. Check logs for additional information.")
 
     def clean_up_data(self, books):
-        """Removes unnecessary book dat from response body."""
+        """Removes unnecessary book data from response body."""
         filtered_books = []
         book_id = 1
 

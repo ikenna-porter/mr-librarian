@@ -10,9 +10,17 @@ def main():
     user_input = arguments_parser.argument_parser_configs()
     argument = arguments_parser.parse_arguments(user_input)
 
-    # If user entered 'find-book -f' argument (to search for a book from Google Books API):
-    if argument[0] == "f":
 
+    # If user does not provide argument 
+    if argument == None:
+        print(
+            """\nYou must provide an argument. There are three options:
+            \n* python main.py find-book -f <search query>\n* python main.py reading-list -a <1-5>\n* python main.py reading-list -v
+            \nPlease choose one and proceed. For further assistance run the command 'python main.py --help'.\n"""
+            )
+
+    # If user entered 'find-book -f' argument (to search for a book from Google Books API):
+    elif argument[0] == "f":
         print("\n", tabulate(argument[1], headers="keys", tablefmt="simple"), "\n") #displays fetched books
 
         if queries.does_fetched_books_table_exist() == 0:
@@ -23,6 +31,7 @@ def main():
 
     # If user entered 'reading-list -a' argument (to add a book to reading list):
     elif argument[0] == "a":
+        print(argument)
         list_ = ReadingList()
         list_.add_book(argument[1])
     
