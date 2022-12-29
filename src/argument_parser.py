@@ -1,6 +1,7 @@
 import argparse
 import os, sys
 import re as _re
+from argparse import ArgumentError
 OPTIONAL = '?'
 ONE_OR_MORE = '+'
 from gettext import gettext as _, ngettext
@@ -44,27 +45,33 @@ class ArgumentParser(argparse.ArgumentParser):
     def print_usage(self, file=None):
         self._print_message('')
     
-    # def _match_argument(self, action, arg_strings_pattern):
-    #     # match the pattern for this action to the arg strings
-    #     nargs_pattern = self._get_nargs_pattern(action)
-    #     match = _re.match(nargs_pattern, arg_strings_pattern)
+    # _match_argument() was also overridden. By overriding this method, we address use cases in which user doesn't include arguments after the flags -f and -a
+    def _match_argument(self, action, arg_strings_pattern):
+        # match the pattern for this action to the arg strings
+        nargs_pattern = self._get_nargs_pattern(action)
+        match = _re.match(nargs_pattern, arg_strings_pattern)
 
-    #     # raise an exception if we weren't able to find a match
-    #     if match is None:
-    #         nargs_errors = {
-    #             None: _('expected one argument'),
-    #             OPTIONAL: _('expected at most one argument'),
-    #             ONE_OR_MORE: _('expected at least one argument'),
-    #         }
-    #         msg = nargs_errors.get(action.nargs)
-    #         if msg is None:
-    #             msg = ngettext('expected %s argument',
-    #                            'expected %s arguments',
-    #                            action.nargs) % action.nargs
-    #         print(action)
-    #         print("**********************************")
-    #         print(msg)
-    #         raise self.ArgumentError(action, msg)
+        # raise an exception if we weren't able to find a match
+        if match is None:
+            nargs_errors = {
+                None: _('expected one argument'),
+                OPTIONAL: _('expected at most one argument'),
+                ONE_OR_MORE: _('expected at least one argument'),
+            }
+            msg = nargs_errors.get(action.nargs)
+            if msg is None:
+                msg = ngettext('expected %s argument',
+                               'expected %s arguments',
+                               action.nargs) % action.nargs
+            # Adding new line to msg variable and the two if statements were added in order to create a customizable error message
+            msg += "\n"
+            if action.option_strings == ["-f"]:
+                print("\nYou must type a search query after the -f flag. Example: python main.py find-book -f clean code")
+            if action.option_strings == ["-a"]:
+                print("\nYou must type a number from 1 to 5 after the -a flag. Example: python main.py reading-list -a 2")
+            raise ArgumentError(action, msg)
+
+        return len(match.group(1))
     
     def parse_arguments(self, user_input):
         """Takes in user's input and decides what course of action the program should take: find book, add book to reading list, view reading list."""
@@ -92,3 +99,5 @@ class ArgumentParser(argparse.ArgumentParser):
             raise IndexError("Your search query must contain characters. Insert them after the '-f' flag.")
 
         return "+".join(args_list)
+
+        
