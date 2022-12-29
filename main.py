@@ -31,7 +31,6 @@ def main():
 
     # If user entered 'reading-list -a' argument (to add a book to reading list):
     elif argument[0] == "a":
-        print(argument)
         list_ = ReadingList()
         list_.add_book(argument[1])
     
