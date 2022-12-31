@@ -21,6 +21,10 @@ def main():
 
     # If user entered 'find-book -f' argument (to search for a book from Google Books API):
     elif argument[0] == "f":
+
+        if argument[1] == None:
+            return
+            
         print("\n", tabulate(argument[1], headers="keys", tablefmt="simple"), "\n") #displays fetched books
 
         if queries.does_fetched_books_table_exist() == 0:
