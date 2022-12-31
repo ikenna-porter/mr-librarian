@@ -14,10 +14,16 @@ class APIManager():
     def fetch_books(self, user_input):
         """Fetches 5 books that match the users query and removed unnecessary data."""
 
-        url = f"https://www.googleapis.com/books/v1/volumes?q={user_input}&maxResults=5&key={API_KEY_2}"
+        url = f"https://www.googleapis.com/books/v1/volumes?q={user_input}&maxResults=5&key={API_KEY}"
         response = requests.get(url)
         if response.status_code == 200:
             retrieved_books = response.json()
+            
+            # Prints error message it a book matching query couldn't be found.
+            if retrieved_books["totalItems"] == 0:
+                print("\nWe couldn't find any books that match your query. Please submit a different query.\n")
+                return
+
             return self.clean_up_data(retrieved_books)
         else:
             print("Error retrieving book data from API. Check logs for additional information.")
