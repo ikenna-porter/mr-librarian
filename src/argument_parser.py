@@ -17,7 +17,6 @@ class ArgumentParser(argparse.ArgumentParser):
 
     def argument_parser_configs(self):
         """Creates the top-level parser using argparse library"""
-        # parser = argparse.ArgumentParser(description="Welcome to Mr. Librarian. Let's get reading!")
         parser = self
         subparsers = parser.add_subparsers()
 
