@@ -38,7 +38,7 @@ class TestAPIManager(unittest.TestCase):
             {'id': 4, 'title': 'Flowers In The Attic', 'authors': 'V.C. Andrews', 'publisher': 'Simon and Schuster'},
             {'id': 5, 'title': 'Flowers and Nature', 'authors': 'Sam Segal', 'publisher': 'Seven Hills Books'},
         ]
-        self.assertEquals(test, cleaned_data)
+        self.assertEqual(test, cleaned_data)
     
         
 
